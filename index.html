@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ice Cream Form</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- FOR AND NAME or id HAVE TO MATCH -->
+
+<div class="page-wrapper">
+
+	<h2> Fill out the form to place your ice cream order!</h2>
+	<form id="form" action="" method="post">
+    <p>*required</p>
+		<div class="grid-wrapper">
+			<label for="name">Name*:</label>
+			<input type="text" id="name" name="name" placeholder="Your name here" required>
+		</div>
+		<div class="grid-wrapper">
+			<label for="email">Email*:</label>
+			<input type="email" id="email" name="email" placeholder="Your email here" required>
+		</div>
+
+		<div class="grid-wrapper">
+			<label for="phone">Phone*:</label>
+			<input type="tel" id="phone" name="phone" placeholder="Your number here" required>
+		</div>
+		<div id="flavor-group">
+			<label for="flavor">Choose a flavor:</label>
+			<select class="flavor-option" id="choice" name="icecream" required>
+				<option>--Select a flavor--</option>
+				<option>Cookies and cream</option>
+				<option>Peanut butter chip</option>
+				<option>Cheesecake</option>
+				<option>Horchata</option>
+			</select>
+		</div>
+		<div class="vessel">
+			<h4>Cup or Cone?</h4>
+			<div class="choice"><input type="radio" id="cake-cone" name="cone">
+				<label>Cake cone</label>
+			</div>
+			<div class="choice">
+				<input type="radio" id="waffle-cone" name="cone">
+				<label>Waffle cone</label>
+			</div>
+			<div class="choice">
+				<input type="radio" id="cup" name="cone">
+				<label>Cup</label>
+			</div>
+		</div>
+
+		<div class="topping-group">
+			<h4>Choose your toppings:</h4>
+			<div class="flavor">
+				<input type="checkbox" name="rainbow-sprinkles">
+				<label>Rainbow Sprinkles</label>
+			</div>
+			<div class="flavor">
+				<input type="checkbox" name="chocolate sprinkles">
+				<label>Chocolate Sprinkles</label>
+			</div>
+			<div class="flavor">
+				<input type="checkbox" name="syrup">
+				<label>Pure Maple Syrup</label>
+			</div>
+			<div class="flavor">
+				<input type="checkbox" name="void">
+				<label>None</label>
+			</div>
+		</div>
+		<div class="special-comments">
+			<label class="comments">Additonal instructions:</label>
+			<input id="summary" type="text" minlentgh="0" maxlength="100" placeholder="example: allergies">
+		</div>
+		<div class="submit-button">
+			<button type="submit">Place order</button>
+		</div>
+	</form>
+</div>
+<!-- partial -->
+  <script  src="javascript/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Tenor+Sans&display=swap");
+/* SEE PROPERTY/VALUE PAIRS BELOW: */
+/* font-family: "Tenor Sans", sans-serif; */
+/* font-family: "Paytone One", sans-serif; */
+
+div {
+	padding: 10px;
+	display: block;
+}
+h2 {
+	color: #f122ff;
+	text-align: center;
+	font-family: "Paytone One", sans-serif;
+}
+
+.page-wrapper {
+	background: #ffe2be;
+}
+
+p {padding-top:.75rem;
+	padding-right:.5rem;
+text-align:right;
+	font-size: small;
+}
+
+
+form {
+	background: #0393b3;
+	margin: 3rem;
+	font-family: "Tenor Sans", sans-serif;
+	border-radius: 1rem;
+	color: #efefef;
+	padding-left: 1.5rem;
+}
+
+button {
+	margin: auto;
+	display: flex;
+	padding: 0.75rem;
+	border-style: none;
+	border-radius: 10px;
+	color: #0393b3;
+	background-color: #efefef;
+	text-decoration: none;
+	font-size: medium;
+}
+
+button:hover {
+	cursor: pointer;
+}
+input {
+	border-radius: 0.3rem;
+	border: none;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.flavor-option {
+	border-radius: 0.3rem;
+	width: 100%;
+}
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+@media (min-width: 650px) {
+	.grid-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	h2{font-size:xx-large}
+}
